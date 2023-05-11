@@ -1,3 +1,4 @@
+
 <p>Welcome to mirobe coffee factory</p>
 
 <%# raw allowsthe partial views to be rendered as HTML %>
@@ -12,3 +13,11 @@
 <div class="contact-section">
   <%= render partial: 'contact'  %>
 </div>
+
+
+<% if user_signed_in? %>
+  <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+<% else %>
+  <%= link_to "Get Started", user_session_path %>
+<% end %>
+

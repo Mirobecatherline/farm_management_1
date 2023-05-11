@@ -6,9 +6,15 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+
     <%# <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> 
     <%# <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %> 
-
+ <%# <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%# <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %> 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
    <!-- Bootstrap CSS -->
     <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css' %>
  <%# <%= stylesheet_pack_tag 'application.bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %> 
@@ -53,8 +59,9 @@
         </div>
       </div>
     </nav>   
-   
-        <p class="notice"><%= notice %></p>
+ 
+  <p style="color: green"><%= notice %></p>
+
        <p class="alert"><%= alert %></p>
     <div class="container mt-4">
       <%= yield %>
