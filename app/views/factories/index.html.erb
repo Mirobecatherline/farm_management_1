@@ -1,6 +1,11 @@
-<p style="color: green"><%= notice %></p>
 
 <h1>Factories</h1>
+
+<% if user_signed_in? %>
+  <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+<% else %>
+  <%= link_to "Get Started", user_session_path %>
+<% end %>
 
 <div id="factories">
   <% @factories.each do |factory| %>
@@ -12,3 +17,5 @@
 </div>
 
 <%= link_to "New factory", new_factory_path %>
+
+

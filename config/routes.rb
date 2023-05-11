@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations',
+    passwords: 'users/passwords',
+    confirmations: 'users/confirmations',
+    unlocks: 'users/unlocks'
+  }
   resources :farmerberries
   resources :farmers
   resources :factoryfarmberries
@@ -8,9 +14,21 @@ Rails.application.routes.draw do
   resources :factoryfarms
   resources :factories
   resources :coffeberries
+  resources :admin
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
+ 
+    get 'dashboard', to: 'admins#dashboard'
+    # get 'users', to: 'admins#users'
+    # get 'posts', to: 'admins#posts'
+
+  
+
+  get '/signup_redirect' => 'factories#index'
+  get '/signin_redirect' => 'factories#index'
+
+
   # Defines the root path route ("/")
-   root "farmers#index"
+   root "home#index"
 end
