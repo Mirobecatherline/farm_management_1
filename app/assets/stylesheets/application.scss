@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+@import 'bootstrap';
+.navbar-dark {
+    background-color: #142D14;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
