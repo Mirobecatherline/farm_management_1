@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  get 'home/about'
+  get 'home/contact'
+  get 'home/location'
+  get 'home/our_coffee'
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations',
@@ -6,6 +11,7 @@ Rails.application.routes.draw do
     confirmations: 'users/confirmations',
     unlocks: 'users/unlocks'
   }
+
   resources :farmerberries
   resources :farmers
   resources :factoryfarmberries

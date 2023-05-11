@@ -1,4 +1,14 @@
 class HomeController < ApplicationController
-  def index
+  
+  def about
+  end
+
+  def contact
+  end
+
+  def location
+  end
+
+  def our_coffee
   end
 end
