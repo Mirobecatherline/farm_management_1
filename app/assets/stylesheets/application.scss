@@ -14,10 +14,36 @@
  *= require_self
  */
 @import 'bootstrap';
+
 .navbar-dark {
     background-color: #142D14;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
+}
+
+*{
+    font-family: Nunito Sans;
+}
+
+body {
+    width: 100%;
+}
+
+.appContainer{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+:root {
+    --gray: #727272;
+    --grayLL: rgba(114, 114, 114, 0.6);
+    --grayLLL: rgba(114, 114, 114, 0.1);
+    --grayLLLMenu: rgba(114, 114, 114, 0.7);
+    --grayLight: #878787;
+    --blue: #2199e0;
+    --darkblue: rgba(27, 92, 161, 0.5);
+    --panelBCG: #f3f3f9;
+    --active:#ccecfb;
 }

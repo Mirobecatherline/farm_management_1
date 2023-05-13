@@ -1,0 +1,7 @@
+<div class="graphstatsWrapper">
+   <h1 class="defaultHeaders">Graph stats</h1>
+   <div class="graphstats">
+     <%= area_chart User.group_by_day(:created_at).count, discrete: true,  width: "500px", height: "200px", class: "graph",colors: ["#ccecfb"], loading: "Loading..."%>
+   </div>
+
+</div>

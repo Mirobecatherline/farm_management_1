@@ -76,3 +76,14 @@ group :test do
   gem "webdrivers"
 end
 gem "sassc-rails"
+
+gem "font-awesome-sass", "~> 6.4.0"
+
+gem 'chartkick'
+
+
+
+
+gem "importmap-rails", "~> 1.1"
+
+gem "groupdate", "~> 6.2"
