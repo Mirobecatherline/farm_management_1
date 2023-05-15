@@ -1,0 +1,129 @@
+/* .table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.table thead th {
+    border-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.table td,
+.table th {
+    border: 0;
+    font-size: 0.85rem;
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.table thead th {
+    border-top: 0;
+    color: #a8a8a8;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+}
+
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table tbody tr td:first-child {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.table tbody tr td:last-child {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0.5rem 0;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-radius: 0 0 0 0.5rem;
+}
+
+.table thead th:first-child {
+    border-radius: 0.5rem 0 0 0;
+}
+
+.table thead th:last-child {
+    border-radius: 0 0.5rem 0 0;
+}
+
+.table thead th:not(:last-child) {
+    border-right: 1px solid #dee2e6;
+}
+
+.table td.text-center,
+.table th.text-center {
+    text-align: center;
+}
+
+.table thead .table-active {
+    background-color: #f2f2f2;
+    color: #343a40;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #dee2e6;
+}
+
+/* .table-bordered thead th,
+.table-bordered thead td {
+    border
+} */ 
+table {
+    width: 100%;
+}
+
+/* Style the table header */
+thead {
+    background-color: #F5F5F5;
+}
+
+/* Style the table header cells */
+th {
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style the table rows */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the table cells */
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Style the even numbered rows */
+tbody tr:nth-child(even) {
+    background-color: #F9F9F9;
+}
+
+/* Style the hover effect on rows */
+tbody tr:hover {
+    background-color: #F5F5F5;
+}

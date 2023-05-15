@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag 'farmers' %>
+
+<table id="myTable" class="table table-striped table-hover table-bordered table-sm">
+  <thead class="thead-dark">
+    <tr>
+    <th class="text-center">#</th>
+      <th>Name</th>
+      <th>ID</th>
+    <th class="text-center">Creation date</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <% Farmer.limit(5).each_with_index do |user,index| %>
+      <tr>
+      <td class="text-center"><%= index + 1 %></td>
+        <td><%= user.name %></td>
+        <td><%= user.nationalId %></td>
+    <td class="text-center"><%= user.created_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<script>
+  var table = new mdb.DataTable('#myTable', {});
+</script>
