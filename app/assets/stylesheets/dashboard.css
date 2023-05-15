@@ -10,7 +10,6 @@
 }
 
 .sidenav{
-    position: relative;
     margin-left: 0;
     overflow-x: auto;
     height: 100vh;
@@ -20,23 +19,11 @@
 }
 
 .menuDisplay{
-    position: absolute;
-    width: 83%;
-    display: flex !important;
-    justify-content: space-evenly;
-    margin: 0 !important;
-    padding: 70px 0 !important;
+    padding-top: 80px;
+    padding-left: 40px;
 }
 
-.menuDisplayLeft{
-    position: absolute;
-    left: 30px;
-}
 
-.menuDisplayRight{
-    position: absolute;
-    right: 30px;
-}
 
 .nav-item{
     display: flex !important;
@@ -77,7 +64,11 @@
 
 .sideMenuContainer{
     padding-left: 10px !important;
+    position: fixed;
+    background-color: #ffffff;
+    overflow: auto;
 }
+
 
 .nav-fill{
     padding: 20px !important;
@@ -133,8 +124,6 @@
     right: 0;
     bottom: 0;
     padding: 20px 0;
-    /* background-image: linear-gradient(315deg, #ffcfdf 0%, #e2e4fc 74%); */
-    background-color: #ccecfb !important;
 }
 
 .sideNavLogout{
@@ -147,23 +136,78 @@
 /* graphstats css */
 
 .graphstats{
-    width: 510px;
-    background-color: white;
+    width: 100%;
+    background-color: transparent;
     padding: 15px 10px;
     border-radius: 12px;
     display: flex;
 }
 
-.defaultHeaders{
-    font-size: large;
+ .defaultHeaders{
+    font-size: larger;
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
+.graphstatsWrapper{
+    width: 60%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.miniHeader{
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #007bff;
+}
+
+.miniParagraph{
+    color: var(--grayL);
+    font-size: small;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.numbersSection{
+    display: flex;
+    justify-content: center;
+}
+
+.numbersInsideSection{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.numbersInsideSection h6{
+    font-size: 0.9em;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: var(--grayLL);
+}
+
+.numbersInsideSection p{
+    font-size: medium;
+    font-weight: 800;
+    margin-top: -8px;
+}
 
 /* graphstats css */
 
+/* new css */
+
+.menuDisplayRight{
+    display: block;
+}
+
+.displayLeft{
+    margin-top: 50px;
+}
+
+/* new css*/
 
 /* main navigation */
 
@@ -174,4 +218,229 @@
     z-index: 100;
 }
 
+.navProfile{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.username{
+    font-size: small;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-left: 15px;
+}
+
+.userProfilePic{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar-notification{
+    background-color: var(--panelBCG);
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 35px;
+    color: var(--gray);
+}
+
 /* main navigation */
+
+
+/* statistics boxes */
+
+.statisticsContainer{
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.statsSingleBox{
+    width: 200px !important;
+    height: 80px !important;
+    display: flex;
+}
+
+.statsIcon{
+    background-color: white !important;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50% !important;
+    color: #72d2fb;
+    margin-right: 20px;
+}
+
+
+.boxIconText{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -14px;
+}
+
+.tally{
+    font-size: smaller;
+    font-weight: 700;
+    color: white;
+}
+
+.subject{
+    font-size: small;
+    font-weight: 400;
+    color: white;
+}
+
+.waves{
+    color: greenyellow;
+    font-size: 0.7em;
+    margin-left: 18px;
+} 
+
+.boxContentRight{
+    margin-top: -2px;
+}
+
+/* statistics boxes */
+
+/*
+style="background: linear-gradient(to bottom right, #6FDFB4, #b3ffb3);
+style="background: linear-gradient(to bottom right, #7E6FFC, #b3c6ff);
+style="background: linear-gradient(to bottom right, #47C3F7, #b3c6ff);
+*/
+
+
+/* analytics */
+
+.progress-bar2{
+    background-color: #72d2fb !important;
+    height: 10px !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+}
+
+.progress-bar1{
+    background-color: #6FDFB4 !important;
+    height: 10px !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+}
+
+.progress{
+    background-color: var(--grayLLL) !important;
+    height: 10px !important;
+    border-radius: 5px !important;
+}
+
+.progressIcon{
+    width: 42px;
+    height: 42px;
+    background-color: #6FDFB4;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 22px;
+}
+
+.progressBottomIcon{
+    background-color: #72d2fb;
+}
+
+.progressCotainer{
+    width: 570px !important;
+}
+
+
+
+.analyticsContainer{
+    background-color: #ffffff;
+    margin-left: 20px;
+    border-radius: 12px;
+    height: 200px;
+    padding-top: 2px;
+}
+
+
+/* analytics */
+
+
+/* tabs css */
+
+h2{
+    color:#000;
+    text-align:center;
+    font-size:2em;
+  }
+  .warpper{
+    display:flex;
+    align-items: center;
+  }
+  .tab{
+    cursor: pointer;
+    padding:10px 20px;
+    display: block;
+    font-size: medium;
+    text-transform: capitalize;
+    color: var(--grayLL);
+    font-weight: 500;
+  }
+
+  .tabs{
+    margin-right: 40px;
+    background-color: #ffffff;
+    height: 200px;
+    border-radius: 12px;
+    padding: 30px 0;
+    width: 190px;
+  }
+
+  .panels{
+    background:#fffffff6;
+    width: 385px;
+    border-radius: 12px;
+    overflow:hidden;
+  }
+  .panel{
+    display:none;
+    animation: fadein .8s;
+  }
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  .panel-title{
+    font-size:1.5em;
+    font-weight:bold
+  }
+  .radio{
+    display:none;
+  }
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel{
+    display:block
+  }
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab{
+    background: var(--active);
+    color:#72d2fb;
+    border-left: 2px solid #72d2fb;
+  }
+
+/* tabs css */

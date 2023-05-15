@@ -1,7 +1,41 @@
+<div>
+<h1 class="defaultHeaders">Graph stats</h1>
 <div class="graphstatsWrapper">
-   <h1 class="defaultHeaders">Graph stats</h1>
-   <div class="graphstats">
-     <%= area_chart User.group_by_day(:created_at).count, discrete: true,  width: "500px", height: "200px", class: "graph",colors: ["#ccecfb"], loading: "Loading..."%>
+   <div class="graphTopContent">
+      <h3 class="miniHeader">Header</h3>
+      <p class="miniParagraph">So why would you want to compile JavaScript? JavaScript started life
+         in the 90s when Brendan Eich at Netscape devised a scripting language 
+         that could be used from an HTML file executing in the Netscape browser
+         to add dynamic capabilities 
+      </p>
    </div>
 
+   <div class="numbersSection" >
+   
+   <div class="numbersInsideSection">
+       <h6>berries </h6>
+       <p>300 KG</p>
+   </div>
+
+   +
+
+   <div class="numbersInsideSection">
+       <h6>mbuni </h6>
+       <p>300 KG</p>
+   </div>
+   
+   =
+
+   <div class="numbersInsideSection">
+       <h6>total </h6>
+       <p>300 KG</p>
+   </div>
+
+   </div>
+   <div class="graphstats">
+     <%= bar_chart User.group_by_day(:created_at, format: "%a").count,  discrete: true,  width: "500px", height: "200px", colors: ["#007bff"], class: "graph", loading: "Loading..." %>
+   </div>
+
+
+</div>
 </div>
