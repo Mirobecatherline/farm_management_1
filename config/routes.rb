@@ -29,8 +29,8 @@ Rails.application.routes.draw do
     # get 'users', to: 'admins#users'
     # get 'posts', to: 'admins#posts'
 
-  
-
+  # post '/update_active_menu', to: 'admins#dashboard'  
+  post '/update_active_menu', to: 'admins#update_active_menu'
   get '/signup_redirect' => 'factories#index'
   get '/signin_redirect' => 'factories#index'
 

@@ -1,8 +1,5 @@
 .sideMenu{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  position: relative;
 }
 
 .container {
@@ -14,9 +11,10 @@
     overflow-x: auto;
     height: 100vh;
     width:17%;
-    padding-top: 40px;
+    
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
 
 .menuDisplay{
     padding-top: 80px;
@@ -67,6 +65,8 @@
     position: fixed;
     background-color: #ffffff;
     overflow: auto;
+    height: 100vh;
+    padding-bottom: 10px;
 }
 
 
@@ -100,25 +100,25 @@
     background-color: transparent !important;
 }
 
-.dashDisplay{
+ .dashDisplay{
     background-color: var(--panelBCG);
     width: 83%;
-}
+} 
 
-.tab-content{
+ .tab-content{
     margin: 0;
     padding: 0;
-}
+} 
 
 .navbar{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .sideNavLogoutContainer{
-    position: absolute;
+    /* position: absolute;
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
     width: 17%;
     left: 0;
     right: 0;
@@ -128,6 +128,7 @@
 
 .sideNavLogout{
    background-color: #72d2fb !important;
+   
    border: none !important;
 }
 
@@ -199,23 +200,23 @@
 
 /* new css */
 
-.menuDisplayRight{
+/* .menuDisplayRight{
     display: block;
 }
 
 .displayLeft{
     margin-top: 50px;
-}
+} */
 
 /* new css*/
 
 /* main navigation */
 
 .mainNav{
-    position: fixed;
+    /* position: fixed;
     width: 100%;
-    background-color: white;
-    z-index: 100;
+    background-color: white; */
+    /* z-index: 100; */
 }
 
 .navProfile{
