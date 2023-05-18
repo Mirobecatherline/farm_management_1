@@ -4,6 +4,7 @@ class AdminsController < ApplicationController
 
     def dashboard
         # your admin dashboard logic
+        @active_menu=true
     end
 
     def users
