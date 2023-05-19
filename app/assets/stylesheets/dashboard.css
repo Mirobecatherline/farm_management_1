@@ -1,8 +1,8 @@
 .sideMenu{
     display: flex;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    overflow: auto;
-    justify-content: space-between;
 }
 
 .container {
@@ -11,22 +11,16 @@
 
 .sidenav{
     margin-left: 0;
-    display: flex;
-    overflow-x: auto;
     height: 100vh;
     width: fit-content;
-    padding-top: 40px;
-    overflow: auto;
-    width:17%;
-    /* padding-top: 40px; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding-top: 10px;
+    overflow: hidden;
+    background-color: #f1f8f6;
 }
 
 .menuDisplay{
-    padding-top: 80px;
-    padding-left: 80px;
-    padding-top: 0px;
-    padding-left: 30px;
+    padding-top: 50px;
+    padding-left: 40px;
 }
 
 
@@ -69,9 +63,8 @@
 }
 
 .sideMenuContainer{
-    /* padding-left: 10px !important; */
-    position: fixed;
-    background-color: #ffffff;
+    padding-left: 10px !important;
+    background-color: #f1f8f6;
 }
 
 
@@ -88,7 +81,7 @@
 }
 
 .active li{
-    color: var(--blue) !important;
+    color: black !important;
     border: none;
 }
 
@@ -105,10 +98,23 @@
     background-color: transparent !important;
 }
 
+.dropdown-toggle{
+    padding: 0 !important;
+    border: none !important;
+    background-color: transparent !important;
+    outline: none;
+    color: #000;
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+  }
+
+
+
 .dashDisplay{
-    background-color: var(--panelBCG);
-    /* width: 83%; */
-    padding-bottom: 30px;
+    background-color: var(--grayLLL);
+    width: 100%;
 }
 
 .tab-content{
@@ -117,14 +123,18 @@
 }
 
 .navbar{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: #f1f8f6;
+}
+
+#menu-container{
+    background-color: #f1f8f6;
 }
 
 .sideNavLogoutContainer{
-    /* position: absolute;
+    position: absolute;
     position: fixed;
     display: flex;
-    justify-content: center; */
+    justify-content: center;
     width: 17%;
     left: 0;
     right: 0;
@@ -133,10 +143,16 @@
 }
 
 .sideNavLogout{
-   background-color: #72d2fb !important;
+   background-color: #173136 !important;
    border: none !important;
+   color: white;
+   text-transform: capitalize;
 }
 
+.testDisplay{
+    display: flex;
+    gap: 10px;
+}
 
 
 /* graphstats css */
@@ -157,8 +173,8 @@
 }
 
 .graphstatsWrapper{
-    width: 60%;
-    background-color: #ffffff;
+    width: fit-content;
+    background-color: #f1f8f6;
     padding: 20px;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -168,13 +184,13 @@
     font-size: large;
     font-weight: bold;
     text-transform: capitalize;
-    color: #007bff;
+    color: #99894e;
+    
 }
 
 .miniParagraph{
-    color: var(--grayL);
     font-size: small;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 40px;
 }
 
@@ -206,12 +222,21 @@
 /* new css */
 
 .menuDisplayRight{
-    display: block;
+    display: flex;
+    gap: 40px;
 }
 
 .displayLeft{
-    margin-top: 50px;
+    background-color: #f1f8f6;
+    margin-right: 30px;
+    padding: 20px;
+    height: 300px;
 }
+
+.testDisplayed{
+    display: flex;
+}
+
 
 /* new css*/
 
@@ -228,6 +253,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    position: relative;
 }
 
 .username{
@@ -243,6 +269,29 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+}
+
+.userProfile2{
+    width: 45px;
+    height: 49px;
+    object-fit: fill;
+}
+
+.usernameProfile{
+    font-weight: 800;
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+.profile-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border-radius: 12px;
+    gap: 10px;
+    margin-top: 35px;
 }
 
 .navbar-notification{
@@ -270,46 +319,39 @@
 }
 
 .statsSingleBox{
-    width: 200px !important;
-    height: 80px !important;
+    width: 220px !important;
+    height: 150px !important;
     display: flex;
+    justify-content: space-between;
 }
 
 .statsIcon{
-    background-color: white !important;
-    padding: 7px;
-    display: flex;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50% !important;
-    color: #72d2fb;
-    margin-right: 20px;
+    color: white !important;
+    
 }
 
 
-.boxIconText{
-    display: flex;
-    justify-content: space-between;
-    margin-top: -14px;
-}
+/* .boxIconText{
+ 
+} */
 
 .tally{
-    font-size: smaller;
+    font-size: xx-large;
     font-weight: 700;
     color: white;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 .subject{
-    font-size: small;
-    font-weight: 400;
+    font-size: large;
+    font-weight: lighter;
     color: white;
 }
 
 .waves{
     color: greenyellow;
     font-size: 0.7em;
-    margin-left: 18px;
 } 
 
 .boxContentRight{
@@ -370,11 +412,14 @@ style="background: linear-gradient(to bottom right, #47C3F7, #b3c6ff);
 
 
 .analyticsContainer{
-    background-color: #ffffff;
     margin-left: 20px;
     border-radius: 12px;
     height: 200px;
     padding-top: 2px;
+}
+
+.analyticsWrapper{
+    width: 40%;
 }
 
 
@@ -388,31 +433,23 @@ h2{
     text-align:center;
     font-size:2em;
   }
-  .warpper{
+  /* .warpper{
     display:flex;
     align-items: center;
-  }
+  } */
+
+
   .tab{
     cursor: pointer;
-    padding:10px 20px;
-    display: block;
-    font-size: medium;
-    text-transform: capitalize;
-    color: var(--grayLL);
-    font-weight: 500;
   }
 
   .tabs{
-    margin-right: 40px;
-    background-color: #ffffff;
-    height: 200px;
-    border-radius: 12px;
-    padding: 30px 0;
-    width: 190px;
+     width: 200px;
+     display: flex;
+     gap: 10px;
   }
 
   .panels{
-    background:#fffffff6;
     width: 385px;
     border-radius: 12px;
     overflow:hidden;
@@ -444,9 +481,31 @@ h2{
   #one:checked ~ .tabs #one-tab,
   #two:checked ~ .tabs #two-tab,
   #three:checked ~ .tabs #three-tab{
-    background: var(--active);
     color:#72d2fb;
-    border-left: 2px solid #72d2fb;
+    border-bottom: 2px solid #72d2fb;
   }
 
 /* tabs css */
+
+
+
+.gateway{
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+    margin-bottom: 10px;
+}
+
+.gateway-icon{
+    width: 35px;
+    height: 35px;
+    background-color: #99894e;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    margin-top: -6px;
+    padding: 5px;
+}
+
+
+

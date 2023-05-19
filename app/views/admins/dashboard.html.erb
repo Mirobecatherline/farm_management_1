@@ -1,8 +1,9 @@
+<div class="testContainer">
 <%# <div class="mainNav">
     <%= render "navigation"%>
 <%# </div>  %>
-<div class="sideMenu d-flex position-relative">
-  <div id="menu-container" class=" h-100 d-flex flex-column overflow-hidden overflow-auto md:hover:overflow-auto pb-10 " style="position: absolute; z-index: 10000">
+<div class="sideMenu">
+  <div id="menu-container" >
      <% if @active_menu %>
       <%= render partial: 'sidenav' %>
     <% end %>
@@ -17,13 +18,13 @@
 
  <div class="dashDisplay content-container <%= @active_menu ? 'menu-open' : 'menu-closed' %>">
               <div>
-                <div>
+                <div class="mainNav fixed-top md-static navbar-expand w-100 mt-0 position-relative">
+                  <%= render "navigation"%>
+                </div>
+                <div class="displayAll">
                   <div class="tab-content py-0 px-3 px-sm-0 screen " id="nav-tabContent">
                     <div class="tab-pane fade show active menuDisplay " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                     <%# mainNav fixed-top md-static navbar-expand w-100   d-flex justify-content-between position-relative %>
-                     <div class="mainNav fixed-top md-static navbar-expand w-100 mt-0 position-relative">
-                        <%= render "navigation"%>
-                    </div>
+
                     
                      <div class="menuDisplayLeft">
                        <%= render "statistics" %>
@@ -87,17 +88,16 @@
 <style>
   .content-container {
     width: 100%;
-   
     transition: all 0.3s ease-in-out;
   }
 
   .menu-open {
-    margin-left: 300px;
+    margin-left: 0px;
   }
 
   .menu-closed {
     margin-left: 0;
-    width: 100vw;
+    width: fit-content;
   }
 </style>
-<%# <%= render 'calender' %> 
+</div>
